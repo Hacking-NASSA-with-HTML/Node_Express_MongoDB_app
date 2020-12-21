@@ -72,7 +72,6 @@ app.use('/person', (req, res) => {
 
 app.use('/update', (req, res) => {
 
-
     var updateName = req.body.username;
     var updateAge = req.body.age;
 
@@ -86,8 +85,18 @@ app.use('/update', (req, res) => {
             res.send('No person named ' + updateName);
         }
         else {
-            res.render('updated', { person: person });
+            person.age = req.body.age;
+            person.save((err) => {
+                if (err) {
+                    res.type('html').status(500);
+                    res.send('Error: ' + err);
+                }
+                else {
+                    res.render('updated', { person: person });
+                }
+            });
         }
+
     });
 
 

@@ -28,3 +28,7 @@ Start Node to run
 ### http://localhost:3000/public/form.html
 To run app with HTML file
 ``` http://localhost:3000/public/personform.html ```
+
+### http://localhost:3000/all
+To To see people in database
+``` http://localhost:3000/all ```
