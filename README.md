@@ -21,9 +21,6 @@ Install Mongoose helper package
 Start Node to run
 ``` node index.js ```
 
-### http://localhost:3000/welcome/?name=Richcatt
-Request with a name ))
-``` http://localhost:3000/welcome/?name=Richcatt ```
 ### http://localhost:3000/public/form.html
 To run app with HTML file
 ``` http://localhost:3000/public/personform.html ```
